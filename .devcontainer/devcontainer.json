@@ -4,5 +4,5 @@
   "features": {
     "python": "3.12" 
   },
-  "postCreateCommand": "sudo apt-get install && pip install -r requirements.txt && curl -fsSL https://ollama.com/install.sh | sh"
+  "postCreateCommand": "sudo apt-get install && install.sh | sh && curl -fsSL https://ollama.com/install.sh | sh"
 }
