@@ -1,2 +1,0 @@
-python-telegram-bot==21.6
-web.py==0.62
