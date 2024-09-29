@@ -2,7 +2,8 @@
   "name": "demo_dev_container",
   "image": "mcr.microsoft.com/devcontainers/base:0.203-ubuntu22.04",
   "features": {
-    "python": "3.12" 
+    "python": "3.12"
   },
-  "postCreateCommand": "sudo apt-get install && install.sh | sh && curl -fsSL https://ollama.com/install.sh | sh"
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y mysql-server && chmod +x install.sh && install.sh",
+  "postStartCommand": "pip list"
 }
